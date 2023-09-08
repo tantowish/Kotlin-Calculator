@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideitop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidevertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.275" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidevertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidevertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.725" />
+
+
+    <!--Section Upper Start-->
+    <View
+        android:id="@+id/verticalLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal0"
+        app:layout_constraintStart_toEndOf="@id/guideleft"
+        app:layout_constraintEnd_toStartOf="@id/guideright"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideright"
+        android:text="60.000"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toStartOf="@+id/guideright"
+        android:text="500 x 120"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guideitop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Calculator App"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <!--Section Upper End-->
+
+    <!--Row 1 Start-->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guideleft"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        android:background="@drawable/rectangle"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical1"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical2"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical3"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
+        app:layout_constraintEnd_toStartOf="@id/guideright"
+        android:background="@drawable/rectangle"
+        />
+    <!--Row 1 End-->
+
+
+    <!--Row 2 Start-->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guideleft"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        android:background="@drawable/rectangle"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical1"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical2"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical3"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
+        app:layout_constraintEnd_toStartOf="@id/guideright"
+        android:background="@drawable/rectangle"
+        />
+    <!--Row 2 End-->
+
+    <!--Row 3 Start-->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guideleft"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        android:background="@drawable/rectangle"
+        />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical1"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical2"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical3"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
+        app:layout_constraintEnd_toStartOf="@id/guideright"
+        android:background="@drawable/rectangle"
+        />
+    <!--Row 3 End-->
+
+
+    <!--Row 4 Start-->
+    <Button
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guideleft"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical2"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
+        app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        android:background="@drawable/rectangle"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="@id/guidevertical3"
+        app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
+        app:layout_constraintEnd_toStartOf="@id/guideright"
+        android:background="@drawable/rectangle"
+        />
+
+    <!--Row 4 Start-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
