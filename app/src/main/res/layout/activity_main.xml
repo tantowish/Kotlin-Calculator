@@ -121,152 +121,228 @@
         android:text="500 x 120"
         android:textSize="24sp"
         />
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/guideitop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Calculator App"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        />
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/donker"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" App"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            />
+    </LinearLayout>
     <!--Section Upper End-->
 
     <!--Row 1 Start-->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guideright"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
     <!--Row 1 End-->
 
 
     <!--Row 2 Start-->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guideright"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
     <!--Row 2 End-->
 
     <!--Row 3 Start-->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="75dp"
         android:layout_height="75dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guideright"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
     <!--Row 3 End-->
 
 
     <!--Row 4 Start-->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="165dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
         />
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guideright"
         android:background="@drawable/rectangle"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         />
 
     <!--Row 4 Start-->

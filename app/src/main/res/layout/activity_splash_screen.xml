@@ -11,9 +11,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"
+        app:layout_constraintGuide_percent="0.58"
         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/splash"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
     <TextView
+        android:id="@+id/textBig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate Everything"
@@ -22,6 +33,26 @@
         app:layout_constraintStart_toStartOf="parent"
         android:textStyle="bold"
         android:textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/textSmall1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur"
+        app:layout_constraintTop_toBottomOf="@+id/textBig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" adipiscing elit, sed do eiusmod"
+        app:layout_constraintTop_toBottomOf="@+id/textSmall1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
