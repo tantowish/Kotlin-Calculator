@@ -56,6 +56,13 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.83"
         />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideihorizontal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideleft"
@@ -151,11 +158,13 @@
     <!--Row 1 Start-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal2"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="7"
         android:textColor="@color/white"
@@ -165,11 +174,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn8"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal2"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="8"
         android:textColor="@color/white"
@@ -178,11 +189,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn9"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal2"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="9"
         android:textColor="@color/white"
@@ -191,11 +204,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnPlus"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal1"
         app:layout_constraintEnd_toStartOf="@id/guideright"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal2"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="+"
         android:textColor="@color/white"
@@ -208,11 +223,13 @@
     <!--Row 2 Start-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal3"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="4"
         android:textColor="@color/white"
@@ -222,11 +239,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn5"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal3"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="5"
         android:textColor="@color/white"
@@ -235,11 +254,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal3"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="6"
         android:textColor="@color/white"
@@ -248,11 +269,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnMinus"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal2"
         app:layout_constraintEnd_toStartOf="@id/guideright"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal3"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="-"
         android:textColor="@color/white"
@@ -264,11 +287,13 @@
     <!--Row 3 Start-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical1"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal4"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="1"
         android:textColor="@color/white"
@@ -278,11 +303,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn2"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical1"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal4"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="2"
         android:textColor="@color/white"
@@ -291,11 +318,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal4"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="3"
         android:textColor="@color/white"
@@ -304,11 +333,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSlash"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal3"
         app:layout_constraintEnd_toStartOf="@id/guideright"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal4"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="/"
         android:textColor="@color/white"
@@ -321,11 +352,13 @@
     <!--Row 4 Start-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn0"
-        android:layout_width="165dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guideleft"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guidevertical2"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal5"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="0"
         android:textColor="@color/white"
@@ -334,11 +367,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnMultiple"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical2"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guidevertical3"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal5"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="x"
         android:textColor="@color/white"
@@ -348,11 +383,13 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEqual"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/guidevertical3"
         app:layout_constraintTop_toBottomOf="@+id/guideihorizontal4"
         app:layout_constraintEnd_toStartOf="@id/guideright"
+        app:layout_constraintBottom_toTopOf="@+id/guideihorizontal5"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangle"
         android:text="="
         android:textColor="@color/white"
